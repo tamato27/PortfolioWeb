@@ -1,0 +1,55 @@
+{% extends 'second-base.html' %}
+
+<!-- Page title -->
+{% block title %}
+
+    <title>API</title>
+
+{% endblock %}
+
+<!-- Features Section -->
+{% block features %}
+
+    <!-- Skills section -->
+    <div class="section-cv">
+        <div class="row section-headers">
+
+            <h1>API Page links</h1>
+
+            <a class="nav-link" href={{ url_for("home.index") }}>Home</a>
+            <br>
+            <a class="nav-link" href={{ url_for("api.home") }}>API</a>
+            <hr>
+
+            <h2>How to use the API's</h2>
+
+            <ul>
+                <li><a href="http://127.0.0.1:5000/api/get_image?type=1">Get Img (GET)</a></li>
+                <li><a href="http://127.0.0.1:5000/api/qr?firstname=Marius&lastname=Niehaus">Inline Json (Post)</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="section-cv">
+        <div class="row section-headers">
+            <h2>QR Code Examples</h2>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 qrcodes">
+                <img src="{{ qrcode("https://tamato27.pythonanywhere.com", box_size=4, border=3, error_correction='H') }}">
+                <img src="{{ qrcode("https://tamato27.pythonanywhere.com",box_size=4, border=3, error_correction='H', icon_img='site_img/icons/me-circle.png')  }}">
+                <img src="{{ qrcode("https://tamato27.pythonanywhere.com", box_size=4, border=3,  error_correction='H', icon_img='site_img/icons/me-circle.png', back_color='ffff', fill_color='green') }}">
+                <img src="{{ qrcode("https://tamato27.pythonanywhere.com", box_size=4, border=3,  error_correction='H', back_color='ffff', fill_color='red') }}">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

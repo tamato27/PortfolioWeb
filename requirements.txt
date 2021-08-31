@@ -1,0 +1,2 @@
+Flask~=2.0.1
+flask_qrcode~=3.0.0

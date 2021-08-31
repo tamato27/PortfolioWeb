@@ -1,0 +1,163 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+	/*To hide the horizontal scroller appearing during the animation*/
+	/*overflow: hidden;*/
+}
+
+/* Title Section */
+#title {
+    background-color: #353941;
+    color: white;
+    /*background-image: -moz-linear-gradient(#04879C, yellow);*/
+}
+
+.container-fluid {
+    padding: 1% 15%;
+}
+
+h1 {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h4, h5 {
+    font-family: Montserrat-Black, sans-serif;
+}
+
+
+/* Header Logo text */
+#text-logo {
+    display: inline-block;
+}
+
+.box-color-letter {
+    display: inline-block;
+    color: #001F3F;
+    background-color: yellow;
+    height: 4.5rem;
+    width: 3.5rem;
+    padding: 0 0;
+    text-align: center;
+
+}
+
+.box-non-color-letter {
+    display: inline-block;
+}
+
+.box-color-letter {
+    font-size: 20px;
+    margin: 0;
+}
+
+.portfolio-txt {
+    font-weight: bold;
+    color: yellow;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.container-fluid .brand-nav {
+    padding: 0 6rem 4.5rem;
+}
+
+.navbar-brand {
+    /*font-family: 'Cantarell', sans-serif;*/
+    /*font-size: 2.5rem;*/
+    /*font-weight: bold;*/
+    /*size: 20.5rem;*/
+}
+
+.title-image {
+    width: 25%;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light" , sans-serif;
+}
+
+/* Title Text */
+.title-text {
+    font-size: 2rem;
+    padding: 0 0;
+    margin-left: 10rem;
+    width: 50%;
+    /*transform: rotate(25deg);*/
+
+}
+
+.material-icons {
+    font-size: 4rem;
+    color: yellow;
+    margin-left: 15rem;
+}
+
+
+/* Features Section */
+#features {
+	padding: 10px;
+}
+
+/*!* targeting all h3 *!*/
+/*.feature-titles {*/
+/*	font-weight: bold;*/
+/*}*/
+
+.logo-container {
+	margin: 50px;
+}
+
+/* Footer Section */
+#footer {
+    text-align: center;
+	padding-top: 10rem;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+.fb {
+	color: #395693;
+}
+
+.tw {
+	color: #399dec
+}
+
+.insta {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  	-webkit-background-clip: text;
+	/* Also define standard property for compatibility */
+  	-webkit-text-fill-color: transparent;
+}
+
+
+/*!*Making the site responsive by changing sizes as the site displays on smaller screens*!*/
+
+/*@media (max-width: 1028px) {*/
+/*    #title {*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    .title-image {*/
+/*        !*position: static;*!*/
+/*        !*transform: rotate(0);*!*/
+/*        width: 40%;*/
+/*    }*/
+/*}*/

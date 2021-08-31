@@ -1,0 +1,95 @@
+
+<div class="container-fluid">
+
+        {#  Navbar bootstrap  #}
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid brand-nav">
+                <a class="navbar-brand" href="">
+                <img class="title-image" src="{{ url_for('static', filename='site_img/icons/me-circle.png') }}" alt="marius profile picture"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href={{ url_for("home.index") }}>me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href={{ url_for("api.home") }}>API's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Free</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Snap</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Title -->
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div id="text-logo">
+                    <div class="box-color-letter">
+                        <h1>M</h1>
+                    </div>
+
+                    <div class="box-non-color-letter">
+                        <h1>arius</h1>
+                    </div>
+
+                    <div class="box-color-letter">
+                        <h1>N</h1>
+                    </div>
+
+                    <div class="box-non-color-letter">
+                        <h1>iehaus</h1>
+                    </div>
+
+                </div>
+
+                <h3>my</h3>
+                <h2 class="portfolio-txt">Portfolio</h2>
+
+            </div>
+
+            <div class="col-lg-6">
+                <span class="material-icons">fingerprint</span>
+                <p class="title-text">An Aspiring Fullstack Developer & <br>Professional Network Engineer</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                {# moving clouds #}
+                <div id="clouds">
+                <div class="cloud x1"></div>
+                <!-- Time for multiple clouds to dance around -->
+                <div class="cloud x2"></div>
+{#                <div class="cloud x3"></div>#}
+{#                <div class="cloud x4"></div>#}
+{#                <div class="cloud x5"></div>#}
+                </div>
+
+            </div>
+        </div>
+
+    </div>

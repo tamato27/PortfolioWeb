@@ -1,0 +1,35 @@
+/* Skills Section */
+
+.section-cv {
+    padding: 3rem;
+}
+
+.section-cv .section-headers {
+    padding-bottom: 3rem;
+}
+
+.work-exp-padding {
+    padding-bottom: 3rem;
+}
+
+.section-cv ul {
+    list-style: none; /* Remove default bullets */
+}
+
+.section-cv ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: 2rem; /* Also needed for space (tweak if needed) */
+}
+
+.cntr{
+    align-items: center
+}
+
+.qrcodes {
+    padding: 0rem 7rem ;
+    margin-right: 0;
+}

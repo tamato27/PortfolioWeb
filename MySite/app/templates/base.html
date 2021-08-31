@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Links and css sources -->
+{% include 'header.html' %}
+<!-- Page Title -->
+{% block title %}<title>Skills</title>{% endblock %}
+
+</head>
+<body>
+
+
+<!-- Title Header -->
+<section id="title">
+
+    {% include 'title-section.html' %}
+
+</section>
+
+
+<!-- Features Section -->
+<section id="features">
+
+      <div class="container-fluid">
+
+        {% block features %}{% endblock %}  {# Site pages contents #}
+
+      </div>
+
+</section>
+
+
+<!-- Testimonials section -->
+<section id="testimonials">
+
+    {% block testimonial %}{% endblock %}
+
+</section>
+
+
+<!-- Press Section-->
+<section id="press">
+
+    {% block press %}{% endblock %}
+
+</section>
+
+
+<!-- Pricing Section-->
+<section id="pricing">
+
+    {% block pricing %}{% endblock %}
+
+</section>
+
+
+<!-- Call to Action Section -->
+<section id="cta">
+
+    {% block action %}{% endblock %}
+
+</section>
+
+
+<!-- Footer  Section-->
+<footer id="footer">
+
+    {% include 'footer.html' %}
+
+{#    <p>© Copyright 2021 MN</p>#}
+
+</footer>
+
+</body>
+
+</html>
